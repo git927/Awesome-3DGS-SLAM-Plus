@@ -28,6 +28,7 @@
 
 | 年份 | 发表渠道 | 论文标题 | 代码仓库 | 备注 |
 |:----:|:-----:| ----------- |:----------:|:----:|
+|2026|`arXiv`|[DPGS-SLAM: Diffusion-Prior and Provenance-Aware Monocular Gaussian Splatting SLAM for Dynamic Visual Sensing](https://arxiv.org/abs/2611.12038)|---|以单目 RGB 为输入，用扩散模型临时补全被动态物体遮挡的静态背景，并标记高斯基元的来源以区分生成内容与真实观测。|
 |2026|`arXiv`|[LangGS-SLAM: Real-Time Language-Feature Gaussian Splatting SLAM](https://arxiv.org/pdf/2602.06991)|---|从VLM（一个语义分割模型）中嵌入三维特征场，实现开放词汇和大语言模型交互式感知；3DGS部分用的GICP|
 |2026|`arXiv`|[PointSLAM++: Robust Dense Neural Gaussian Point Cloud-based SLAM](https://arxiv.org/pdf/2601.11617)|---|融合神经表示（MLP）与高斯表示，位姿优化结合 GICP 与 ORB 重投影误差|
 |2026|`arXiv`|[PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction](https://arxiv.org/pdf/2601.22046)|---|[项目主页](https://city-super.github.io/PLANING/)<br>融合网格与 3DGS 表示。用网格构建稳定的几何骨架，用 3DGS 补充视觉细节。前端采用 MASt3R 等前馈模型预测点图和相机位姿|
@@ -147,6 +148,7 @@
 
 | 年份 | 发表渠道 | 论文标题 | 代码仓库 | 备注 |
 |:----:|:-----:| ----------- |:----------:|:----:|
+|2026|`arXiv`|[GEMOR-GS: Global Extrinsic-calibration-refined Mapping and Online Relocalization for 3D Gaussian-Splatting SLAM](https://arxiv.org/abs/2611.13528)|---|融合激光雷达、IMU 和相机，离线标定雷达与相机外参以细化全局高斯地图，并支持跟踪丢失后的重定位。|
 |2025|`RAL`|[Rad-GS: Radar-Vision Integration for 3D Gaussian Splatting SLAM in Outdoor Environments](https://arxiv.org/pdf/2511.16091)|---|首个融合 4D 雷达与视觉的 3DGS SLAM 框架，实现千米级户外稳健建图;以3D高斯作为可微空间表示，融合原始雷达点云的多普勒信息与几何增强点云，引导同步图像中的动态目标掩码生成，减少渲染伪影并提升定位精度；同时利用非同步图像帧全局优化3D高斯表示，增强纹理一致性与新视角合成保真度；通过全局八叉树结构结合目标高斯基元管理策略，抑制噪声并降低大规模环境下的内存消耗，实现了稳健的户外建图与大规模场景重建。|
 |2025|`IROS`|[GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](https://arxiv.org/pdf/2503.10170?)|[![GitHub 星标数](https://img.shields.io/github/stars/hku-mars/GS-SDF.svg)](https://github.com/hku-mars/GS-SDF)|[项目主页](https://jianhengliu.github.io/Projects/GS-SDF/)|
 |2025|`arXiv`|[LVD-GS: Gaussian Splatting SLAM for Dynamic Scenes via Hierarchical Explicit-Implicit Representation Collaboration Rendering](https://arxiv.org/pdf/2510.22669)|---|---|
@@ -171,6 +173,7 @@
 
 | 年份 | 发表渠道 | 论文标题 | 代码仓库 | 备注 |
 |:----:|:-----:| ----------- |:----------:|:----:|
+|2026|`ICRA`|[MotionGS-SLAM: Event-Modulated Gaussian Splatting for Motion-Blur Robust SLAM](https://ieeexplore.ieee.org/abstract/document/11695697)|---|借助事件相机提供的运动线索，在高斯渲染中显式建模曝光期间的运动模糊，并联合优化相机轨迹与场景几何。<br>[arXiv 版本](https://arxiv.org/abs/2608.15024)|
 |2025|`NIPS`|[Spike4DGS: Towards High-Speed Dynamic Scene Rendering with 4D Gaussian Splatting via a Spike Camera Array](https://openreview.net/pdf?id=V5efEA8nIr)|---|---|
 |2025|`Expert Systems with Applications`|[E2D-GS: Event-Enhanced Deblurring Gaussian Splatting](https://www.sciencedirect.com/science/article/abs/pii/S0957417425034177)|---|---|
 |2025|`arXiv`|[Event-guided 3D Gaussian Splatting for Dynamic Human and Scene Reconstruction](https://arxiv.org/pdf/2509.18566)|---|---|
